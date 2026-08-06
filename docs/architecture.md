@@ -54,14 +54,14 @@ food_ordering_db
 orders
 ```
 ### Proposed Fields
-Field	        Type	    Description
-_id	            ObjectId	Unique order identifier
-customerName	String	    Name of the customer
-foodItems	    Array	    List of ordered food items
-totalAmount	    Number	    Total cost of the order
-orderStatus	    String	    Current order status (Pending, Preparing, Completed, Delivered)
-createdAt	    Date	    Date the order was created
-updatedAt	    Date	    Date the order was last updated
+| Field | Type | Description |
+|---|---|---|
+| _id | ObjectId | Unique record identifier |
+| name | String | Name or title of the record |
+| description | String | Additional information |
+| status | String | Current record status |
+| createdAt | Date | Date the record was created |
+| updatedAt | Date | Date the record was updated |
 ## 8. Design Justification
 The three-tier architecture is appropriate for the Food Ordering System because it separates the user interface, application logic, and database into independent layers. This separation improves maintainability by allowing developers to modify one layer without significantly affecting the others. It also enhances security by preventing direct access to the database from the frontend, improves testing by allowing each layer to be tested independently, and supports future development by making it easier to add new features such as online payment, delivery tracking, and customer reviews.
 ## 9. Architectural Limitations
