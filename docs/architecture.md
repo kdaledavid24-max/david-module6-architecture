@@ -56,30 +56,22 @@ F -->|Display Result| U
 ## 7. Database Plan
 ### Proposed Database Name
 ```text
-system_name_db
+food_ordering_db
 ```
 ### Primary Collection
 ```text
-records
+orders
 ```
-Replace records with the main record of the proposed system.
-Examples include books, products, tasks, appointments, events, and assets.
 ### Proposed Fields
-| Field | Type | Description |
-|---|---|---|
-| _id | ObjectId | Unique record identifier |
-| name | String | Name or title of the record |
-| description | String | Additional information |
-| status | String | Current record status |
-| createdAt | Date | Date the record was created |
-| updatedAt | Date | Date the record was updated |
-Students must replace the sample fields with fields appropriate to their
-proposed system.
+Field	        Type	    Description
+_id	            ObjectId	Unique order identifier
+customerName	String	    Name of the customer
+foodItems	    Array	    List of ordered food items
+totalAmount	    Number	    Total cost of the order
+orderStatus	    String	    Current order status (Pending, Preparing, Completed, Delivered)
+createdAt	    Date	    Date the order was created
+updatedAt	    Date	    Date the order was last updated
 ## 8. Design Justification
-Explain why the three-tier architecture is appropriate for the proposed
-system. Discuss how separating the frontend, backend, and database can
-improve maintainability, security, testing, and future development.
+The three-tier architecture is appropriate for the Food Ordering System because it separates the user interface, application logic, and database into independent layers. This separation improves maintainability by allowing developers to modify one layer without significantly affecting the others. It also enhances security by preventing direct access to the database from the frontend, improves testing by allowing each layer to be tested independently, and supports future development by making it easier to add new features such as online payment, delivery tracking, and customer reviews.
 ## 9. Architectural Limitations
-The current activity focuses only on the proposed architecture. Frontend
-code, backend code, database connection, user authentication, and deployment
-have not yet been implemented. These components will be developed in Module 7.
+The current activity focuses only on the proposed architecture. Frontend development, backend implementation, database connectivity, authentication, payment integration, and deployment have not yet been completed. These components will be developed in Module 7.
