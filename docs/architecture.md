@@ -35,7 +35,7 @@ The data layer will use MongoDB Atlas Free. It will store customer accounts, foo
 ## 5. System Architecture Diagram
 ```mermaid
 flowchart TD
-U[User] --> F[Vue.js Frontend]
+U[Customer] --> F[Vue.js Frontend]
 F -->|HTTP Request| B[Node.js and Express Backend]
 B -->|Database Operation| D[(MongoDB Atlas Free)]
 D -->|Query Result| B
@@ -44,15 +44,15 @@ F -->|Display Result| U
 ```
 ## 6. Data Flow
 ### Example Process: Create a New Record
-1. The user enters information through the Vue.js interface.
-2. Vue.js checks the required input fields.
+1. The customer selects food items through the Vue.js interface.
+2. Vue.js validates the selected items and required information.
 3. The frontend sends an HTTP request to the Express backend.
-4. The backend validates and processes the request.
-5. The backend sends a database operation to MongoDB.
-6. MongoDB stores the new record.
+4. The backend validates the order and calculates the total amount.
+5. The backend stores the order in MongoDB.
+6. MongoDB saves the order information.
 7. MongoDB returns the result to the backend.
 8. The backend sends a JSON response to the frontend.
-9. The frontend displays a confirmation message.
+9. The frontend displays an order confirmation and status.
 ## 7. Database Plan
 ### Proposed Database Name
 ```text
