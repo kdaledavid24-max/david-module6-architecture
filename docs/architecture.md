@@ -11,15 +11,11 @@ This architecture separates the user interface, business logic, and data
 management responsibilities.
 ## 3. Architectural Components
 ### Presentation Layer
-The presentation layer will use Vue.js. It will display information,
-collect user input, and send requests to the backend.
+The presentation layer will use Vue.js. It will display food menus, allow customers to register, log in, place orders, and view order status while sending requests to the backend.
 ### Application Layer
-The application layer will use Node.js and Express. It will receive
-requests, validate data, apply system rules, and communicate with the
-database.
+The application layer will use Node.js and Express. It will receive requests, validate customer information and orders, process business logic, calculate order totals, and communicate with the database.
 ### Data Layer
-The data layer will use MongoDB Atlas Free. It will store, retrieve,
-update, and delete the system's records.
+The data layer will use MongoDB Atlas Free. It will store customer accounts, food menu items, orders, payments, and other system records.
 ## 4. Component Responsibilities
 | Component | Technology | Responsibility |
 |---|---|---|
