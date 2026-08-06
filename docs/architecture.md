@@ -17,21 +17,12 @@ The application layer will use Node.js and Express. It will receive requests, va
 ### Data Layer
 The data layer will use MongoDB Atlas Free. It will store customer accounts, food menu items, orders, payments, and other system records.
 ## 4. Component Responsibilities
-<<<<<<< HEAD
 | Component | Technology | Responsibility |
-|---|---|---|
-| User interface | Vue.js | Displays data and collects user input |
-| Application server | Node.js and Express | Processes requests and applies business rules |
-| Database | MongoDB Atlas Free | Stores and manages system records |
-| Repository | GitHub | Stores documentation and tracks changes |
-=======
-| Component | Technology | Responsibility|
 |---|---|---|
 | User Interface | Vue.js | Displays menus, accepts customer input, and shows order status |
 | Application Server | Node.js and Express | Processes orders, validates data, and applies business rules |
 | Database | MongoDB Atlas Free | Stores customer, menu, and order records |
 | Repository | GitHub | Stores documentation and tracks project changes |
->>>>>>> a1631e2 (docs: add component responsibilities)
 ## 5. System Architecture Diagram
 ```mermaid
 flowchart TD
